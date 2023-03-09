@@ -1,9 +1,8 @@
 const App = () => {
+    const greetings = <h1>Welcome KodeBrewer in React using JSX!</h1>; 
     return (
         <div>
-            <h1>
-                Welcome KodeBrewer in React!
-            </h1>
+            {greetings}
         </div>
     );
 };
