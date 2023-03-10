@@ -1,0 +1,15 @@
+.navss{
+    background-color: grey;
+    height: 300px;
+    margin-top: 10px;
+}
+.conss1{
+    display: inline-block;
+    margin-left: 200px;
+    margin-top: 50px;
+}
+.conss{
+    display: inline-block;
+    margin-left: 400px;
+    margin-top: 50px;
+}

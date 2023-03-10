@@ -1,9 +1,23 @@
+import "bootstrap/dist/css/bootstrap.min.css";
+import Navibar from "./components/Navibar";
+import Carousels from "./components/Carousels";
+import Postcard from "./components/Postcard";
+import Section from "./components/Section";
+import Footer from "./components/Footer";
+import Bcrumb from "./components/Bcrumb";
 const App = () => {
-    const greetings = <h1>Welcome KodeBrewer in React using JSX!</h1>; 
+    
     return (
-        <div>
-            {greetings}
-        </div>
+        <>
+            
+            <Navibar/>
+            <Bcrumb/>
+            <Carousels/>
+            <Section/>
+            <Postcard/>
+            <Footer/>
+           
+        </>
     );
 };
 
