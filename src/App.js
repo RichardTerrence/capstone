@@ -1,26 +1,25 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import Navibar from "./components/Navibar";
-import Cardmap from "./components/Cardmap";
-import Statefulcomponent from "./components/Statefulcomponent";
-import Eventhandler from "./components/Eventhandler";
-import Reacthooks from "./components/Reacthooks";
-import Statelessbutton from "./components/Statelessbutton";
-import { Container } from "react-bootstrap";
-const App = () => {
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./components/Home";
+import FlexBox from "./components/FlexBox";
 
+
+const App = () => {
+    
     return (
-        <>
+        <BrowserRouter>
             <Navibar />
-            <Container style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center' }}>
-                <Cardmap />
-            </Container>
-            <Statelessbutton color="success" label="Message Us" display="inline-block" margin={5}/>
-            <Container>
-                <Statefulcomponent/>
-                <Eventhandler />
-                <Reacthooks />
-            </Container>
-        </>
+            <Routes>
+                <Route path="/" element={<Home/>}/>
+                <Route path="/services" element={<FlexBox/>}/>
+                {/*</Routes><Route path="/experts" element={</>}/>
+                <Route path="/loginA" element={</>}/> */}
+                {/* for other pages 404 */}
+                <Route path="*" element={<h1 style={{textAlign: "center"}}>Error 404 - Page Not Found!</h1>}/>
+            </Routes>
+           
+        </BrowserRouter>
     );
 };
 

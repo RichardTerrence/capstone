@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.cardmapp{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px 0px 20px 0px;
+    bottom: 22.5rem;
+    
+}
+.cardmapp button{
+    background-color:#4B4453 ;
+    border: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .cardmapp{
+        display: flex;
+        flex-direction: column;
+        margin-left: 5rem;
+        margin-top: 25rem;
+        
+        
+    }
+}

@@ -1,0 +1,15 @@
+*{
+    box-sizing: content-box;
+}
+ html, Nav{
+    overflow-x: hidden;
+ }
+@media only screen and (max-width: 600px) {
+    
+    .iconfooter{
+        position: relative;
+        left:  -10.3rem;
+    }
+}
+
+

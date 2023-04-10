@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Container } from "react-bootstrap";
 import axios from "axios";
 const Httpasynawait =()=> {
     //initialize the card/api data
@@ -13,11 +14,12 @@ const Httpasynawait =()=> {
             setCardInfo({...response.data});
         };
         fetchData();
-    },[]);
-    return(
+    }, [cardInfo]);
+    return (
+        <Container style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center' }}>
         <div className="card" style={{width: "18rem"}}>
-            {/*<img src={cardInfo.thumbnail} className="card-img-top" alt="..."/>*/}
-            <img src={`/assets/images/${cardInfo.price}.jpg`} className="card-img-top" alt="..."/>
+             <img src={cardInfo.thumbnail} className="card-img-top" alt="..."/>  
+          {/*  <img src={`/assets/images/ ${cardInfo.price}.jpg`} className="card-img-top" alt="..."/>  */}  
             <div className="card-body">
                 <h5 className="card-title">{cardInfo.title}</h5>
                 <p className="card-text">{cardInfo.description}</p>
@@ -25,6 +27,7 @@ const Httpasynawait =()=> {
                 <button className="btn btn-primary">ADD to cart</button>
             </div>
         </div>
-    )
-}
+        </Container>
+    );
+};
 export default Httpasynawait;
