@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+  }
+/* Add styles to the form container */
+.bckground{
+    background: #F5EFE6;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.form-container {
+    margin: 20px;
+    padding-top: 22px;
+    padding-bottom: 20px;
+    width: 400px;
+    background-color: #F5EFE6;
+    justify-content: center;
+    margin: auto;
+    
+    
+  }
+  .form-container h1{
+    text-align: center;
+    font-family: 'Noto Serif', serif;
+    color: #C34A36;
+  }
+  
+  /* Full-width input fields */
+ .form-container input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #B0A8B9;
+  }
+  .txtmessages{
+    height: 100px;
+  }
+  
+  .form-container [type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  /* Set a style for the submit button */
+  .btn {
+    background-color: #C34A36;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+  
+  .btn:hover {
+    opacity: 1;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .form-container{
+      padding-right: 2rem;
+    }
+  }
+
+

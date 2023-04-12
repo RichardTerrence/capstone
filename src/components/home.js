@@ -2,10 +2,15 @@ import { useState} from 'react'
 import './Home.css';
 import { Link } from 'react-router-dom';
 import ContentFooter from './ContentFooter';
-import Footer from './Footer';
 import Cardmap from './Cardmap';
 import ViVdeo from './ViVdeo';
-import Carousell from './Carousell';
+import Form from './Form';
+
+
+
+
+
+
 
 
 const Home = () => {
@@ -38,8 +43,11 @@ const Home = () => {
                   <ViVdeo/> 
                   <Cardmap/>
                   <ContentFooter/>
-                  <Carousell/>
-                  <Footer/> 
+                  <Form/>
+                 
+                 
+                  
+                  
 
     </>  
   )

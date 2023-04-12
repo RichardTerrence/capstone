@@ -1,39 +1,50 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import road from "./images/road.png";
+import applewatch from './images/applewatch.png';
+import mbpspacegray from './images/mbpspacegray.png';
+import samsungfold from './images/samsungfold.png';
 import "./Cardmap.css";
 
 const  Cardmap =()=> {
   return (
     <>
-    <div className="cardmapp" style={{background:'#FEF7FF'}}>
-    <Card style={{ width: '22rem', }}>
-      <Card.Img variant="top" src={road} />
+    <div className="cardmapp" style={{background:'#DFD3C3'}}>
+    <Card className='crdimg' style={{ width: '22rem', }}>
+      <Card.Img variant="top" src={applewatch} />
       <Card.Body>
-        <Card.Title>Card Title</Card.Title>
+        <Card.Title>Apple Watch Ultra</Card.Title>
         <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
+        <div className="columns">
+          <ul className="price">
+            <li className="grey">$ 9.99</li>
+          </ul>
+        </div>
         </Card.Text>
       </Card.Body>
     </Card>
-    <Card style={{ width: '22rem', }}>
-      <Card.Img variant="top" src={road} />
+    <Card className='crdimg' style={{ width: '22rem', }}>
+      <Card.Img variant="top" src={mbpspacegray} />
       <Card.Body>
-        <Card.Title>Card Title</Card.Title>
+        <Card.Title>MacBook Pro with M2 chip</Card.Title>
         <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
+        <div className="columns">
+          <ul className="price">
+            <li className="grey">$ 9.99 </li>
+          </ul>
+          </div>
         </Card.Text>
       </Card.Body>
     </Card>
-    <Card style={{ width: '22rem', }}>
-      <Card.Img variant="top" src={road} />
+    <Card className='crdimg' style={{ width: '22rem', }}>
+      <Card.Img variant="top" src={samsungfold} />
       <Card.Body>
-        <Card.Title>Card Title</Card.Title>
+        <Card.Title>Samsung Galaxy Fold 4</Card.Title>
         <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
+        <div className="columns">
+          <ul className="price">
+            <li className="grey">$ 9.99</li>
+          </ul>
+          </div>
         </Card.Text>
       </Card.Body>
     </Card>

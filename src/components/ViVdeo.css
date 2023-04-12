@@ -1,11 +1,7 @@
 *{
     box-sizing: border-box;
 }
-  .row:after {
-    content: "";
-    clear: both;
-    display: table;
-  }
+
 .vivid video{
     display: flex;
     flex-direction: column;
@@ -13,8 +9,9 @@
     left: 45rem;
     width: 500px;
     height: auto;
-    top: -30rem;
+    top: -28rem;
     z-index: 1;
+    box-shadow: -10px 10px 5px rgba(0, 0, 0, 0.3);
 }
   
 

@@ -1,5 +1,6 @@
 import React from 'react'
 import "./ViVdeo.css";
+import SnapSave from '../components/videos/SnapSave.mp4';
 
 
 const ViVdeo = () => {
@@ -17,7 +18,7 @@ const ViVdeo = () => {
   return (
     <div className='vivid'>
     <video width="400" controls>
-      <source src="mov_bbb.mp4" type="video/mp4"/>
+      <source src={SnapSave} type="video/mp4"/>
       <source src="mov_bbb.ogg" type="video/ogg"/>
       Your browser does not support HTML5 video.
     </video>

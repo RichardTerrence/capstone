@@ -10,21 +10,37 @@
     justify-content: center;
     gap: 10px;
     padding: 20px 0px 20px 0px;
-    bottom: 22.5rem;
-    
+    bottom: 22.5rem;   
+}
+.crdimg{
+    box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.3);
+    transition: 1s;
+}
+.crdimg:hover{
+    transform: scale(1.2);
+    z-index: 1;
 }
 .cardmapp button{
     background-color:#4B4453 ;
     border: none;
 }
+/* The "Sign Up" button */
+.columns .grey .button {
+    background-color: #4B4453;
+    border: none;
+    color: white;
+    padding: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+  }
 
 @media only screen and (max-width: 600px) {
     .cardmapp{
         display: flex;
         flex-direction: column;
-        margin-left: 5rem;
         margin-top: 25rem;
-        
-        
+        padding-left: 4rem;
+           
     }
 }

@@ -5,7 +5,7 @@ import './Footer.css';
 const Footer =()=> {
   return (
     <>
-      <Navbar style={{background:'#4B4453', height:'200px'}}>
+      <Navbar style={{background:'#85586F', height:'200px'}}>
         <Container className='iconfooter'>
           <Navbar.Brand>
             <div className='container' style={{display:'flex', flexDirection:'row', position:'relative', left:'23rem', zIndex:'3'}}>
